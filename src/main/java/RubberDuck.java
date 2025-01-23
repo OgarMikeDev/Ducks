@@ -1,9 +1,4 @@
-public class RubberDuck extends Duck{
-    @Override
-    public void quack() {
-        System.out.println("К сожалению резиновая утка" +
-                "не умеет крякать :(");
-    }
+public class RubberDuck extends Duck {
 
     @Override
     public void fly() {
