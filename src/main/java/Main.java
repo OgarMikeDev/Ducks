@@ -20,11 +20,14 @@ public class Main {
         System.out.println(firstRubberDuck.display());
         firstRubberDuck.swim();
         firstRubberDuck.quack();
+        firstRubberDuck.fly();
 
         System.out.println();
 
         DecorDuck firstDecorDuck = new DecorDuck();
         System.out.println(firstDecorDuck.display());
+        firstDecorDuck.quack();
+        firstDecorDuck.fly();
         firstDecorDuck.swim();
     }
 }
