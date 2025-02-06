@@ -1,3 +1,5 @@
+package model;
+
 import fly_behavior.FlyWithWings;
 import quack_behavior.Quack;
 

@@ -1,10 +1,12 @@
-import fly_behavior.FlyNoWay;
-import quack_behavior.MuteQuack;
+package model;
 
-public class DecorDuck extends Duck {
+import fly_behavior.FlyNoWay;
+import quack_behavior.Squeak;
+
+public class RubberDuck extends Duck {
     @Override
     public String display() {
-        return "Привет! Я деревянная утка! И путь тебя не смущает то, " +
+        return "Привет! Я резиновая утка! И путь тебя не смущает то, " +
                 "что я умею говорить";
     }
 
@@ -14,7 +16,7 @@ public class DecorDuck extends Duck {
     }
 
     public void quack() {
-        MuteQuack muteQuack = new MuteQuack();
-        muteQuack.quack();
+        Squeak squeak = new Squeak();
+        squeak.quack();
     }
 }
