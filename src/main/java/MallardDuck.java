@@ -1,16 +1,20 @@
-public class MallardDuck extends Duck implements Flyable, Quackable {
+import fly_behavior.FlyWithWings;
+import quack_behavior.Quack;
+
+public class MallardDuck extends Duck {
     @Override
     public String display() {
         return "Утка кряква!";
     }
 
-    @Override
+
     public void fly() {
-        System.out.println("Утка кряква полетела!");
+        FlyWithWings flyWithWings = new FlyWithWings();
+        flyWithWings.fly();
     }
 
-    @Override
     public void quack() {
-        System.out.println("Утка кряква начала крякать!");
+        Quack quack = new Quack();
+        quack.quack();
     }
 }
