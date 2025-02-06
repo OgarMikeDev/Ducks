@@ -6,7 +6,7 @@ public class Main {
         firstMallardDuck.fly();
         firstMallardDuck.quack();
 
-//        System.out.println();
+        System.out.println();
 //
 //        RedheadDuck firstRedheadDuck = new RedheadDuck();
 //        System.out.println(firstRedheadDuck.display());
