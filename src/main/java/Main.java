@@ -5,8 +5,6 @@ public class Main {
         DecorDuck firstMallardDuck = new DecorDuck();
         System.out.println(firstMallardDuck.display());
         firstMallardDuck.swim();
-        firstMallardDuck.performFly();
-        firstMallardDuck.performQuack();
 
 //        System.out.println();
 //
