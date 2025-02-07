@@ -9,14 +9,8 @@ public class MallardDuck extends Duck {
         return "Утка кряква!";
     }
 
-
-    public void fly() {
-        FlyWithWings flyWithWings = new FlyWithWings();
-        flyWithWings.fly();
-    }
-
-    public void quack() {
-        Quack quack = new Quack();
-        quack.quack();
+    public MallardDuck() {
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
     }
 }

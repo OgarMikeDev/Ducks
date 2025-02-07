@@ -10,13 +10,8 @@ public class RubberDuck extends Duck {
                 "что я умею говорить";
     }
 
-    public void fly() {
-        FlyNoWay flyNoWay = new FlyNoWay();
-        flyNoWay.fly();
-    }
-
-    public void quack() {
-        Squeak squeak = new Squeak();
-        squeak.quack();
+    public RubberDuck() {
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Squeak();
     }
 }

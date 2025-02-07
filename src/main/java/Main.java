@@ -1,12 +1,14 @@
+import model.DecorDuck;
+import model.MallardDuck;
 import model.RubberDuck;
 
 public class Main {
     public static void main(String[] args) {
-        RubberDuck firstMallardDuck = new RubberDuck();
+        MallardDuck firstMallardDuck = new MallardDuck();
         System.out.println(firstMallardDuck.display());
         firstMallardDuck.swim();
-        firstMallardDuck.fly();
-        firstMallardDuck.quack();
+        firstMallardDuck.performFly();
+        firstMallardDuck.performQuack();
 
 //        System.out.println();
 //

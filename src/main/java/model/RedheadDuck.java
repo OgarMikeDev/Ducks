@@ -10,13 +10,8 @@ public class RedheadDuck extends Duck {
         return "Красноголовая утка!";
     }
 
-    public void fly() {
-        FlyWithWings flyWithWings = new FlyWithWings();
-        flyWithWings.fly();
-    }
-
-    public void quack() {
-        Quack quack = new Quack();
-        quack.quack();
+    public RedheadDuck() {
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
     }
 }

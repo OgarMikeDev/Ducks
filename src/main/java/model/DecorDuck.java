@@ -10,13 +10,8 @@ public class DecorDuck extends Duck {
                 "что я умею говорить";
     }
 
-    public void fly() {
-        FlyNoWay flyNoWay = new FlyNoWay();
-        flyNoWay.fly();
-    }
-
-    public void quack() {
-        MuteQuack muteQuack = new MuteQuack();
-        muteQuack.quack();
+    public DecorDuck() {
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new MuteQuack();
     }
 }
