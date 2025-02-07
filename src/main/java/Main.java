@@ -2,9 +2,10 @@ import model.*;
 
 public class Main {
     public static void main(String[] args) {
-        DecorDuck firstMallardDuck = new DecorDuck();
-        System.out.println(firstMallardDuck.display());
-        firstMallardDuck.swim();
+        Duck duck = new MallardDuck();
+        System.out.println(duck.display());
+        duck.swim();
+        duck.performFly();
 
 //        System.out.println();
 //
