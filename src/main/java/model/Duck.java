@@ -21,4 +21,12 @@ public abstract class Duck {
         System.out.println("Утка начала плавать!");
     }
     public abstract String display();
+
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 }

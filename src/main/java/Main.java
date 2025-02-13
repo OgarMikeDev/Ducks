@@ -1,12 +1,15 @@
+import fly_behavior.FlyRocketPowered;
 import model.*;
 
 public class Main {
     public static void main(String[] args) {
-        Duck duck = new MallardDuck();
+        Duck duck = new ModelDuck();
         System.out.println(duck.display());
         duck.swim();
         duck.performFly();
         duck.performQuack();
+        duck.setFlyBehavior(new FlyRocketPowered());
+        duck.performFly();
 
 //        System.out.println();
 //
